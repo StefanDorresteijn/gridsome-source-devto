@@ -18,7 +18,7 @@ module.exports = function(api,options){
     throw new Error(`You have not set the route option for the articles.`);
   }
 
-  const devtoURL = `https://dev.to/api/articles?api-key=${options.apiKey}&username=${options.username}`;
+  const devtoURL = `https://dev.to/api/articles/me/published?api-key=${options.apiKey}`;
 
   api.loadSource(async store => {
     store.addContentType({
