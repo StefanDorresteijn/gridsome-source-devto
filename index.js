@@ -35,7 +35,7 @@ module.exports = function(api,options){
    */
   getArticles = async (store,page=1)=> {
     const articles = store.getContentType(options.typeName)
-    let response = await axios.get(devtoURL,{params:{page:page}});
+    let response = await axios.get(devtoURL,{params:{page:page}, headers: { 'api-key': options.apiKey}});
     let posts = response.data;
     if(posts.length>=30 && posts.length!==0){
       getArticles(store,++page);
