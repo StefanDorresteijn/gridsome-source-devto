@@ -1,5 +1,5 @@
 {
-  "name": "@perlatsp/gridsome-source-devto",
+  "name": "@stefandorresteijn/gridsome-source-devto",
   "version": "0.0.1",
   "description": "https://Dev.to source plugin for gridsome",
   "main": "index.js",
